@@ -1,1 +1,2 @@
-# sneak-it
+# snake
+snake game using javaScript
