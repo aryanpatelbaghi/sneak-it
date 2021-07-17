@@ -33,7 +33,7 @@ let score = 0;
 let appleX = 5;
 let appleY = 5;
 
-// sound gulp...
+// sounds...
 const gulpSound = new Audio("gulp.mp3")
 const wrongSound = new Audio("wrong.mp3")
 
@@ -56,6 +56,10 @@ function drawGame() {
   if (score > 5) {
     speed = 15;
   }
+  if (score > 10) {
+    speed = 20;
+  }
+  
   setTimeout(drawGame, 1000 / speed);
 }
 
